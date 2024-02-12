@@ -18,7 +18,7 @@ function App() {
   const yesButtonSize = noCount * 20 + 16;
   const [isModalOpen, setIsModalOpen] = useState(true);
   const [userName, setUserName] = useState("");
-  const [message, setMessage] = useState(""); // State to manage the message text
+  // const [message, setMessage] = useState(""); // State to manage the message text
 
   function handleNoClick() {
     setNoCount(noCount + 1);
