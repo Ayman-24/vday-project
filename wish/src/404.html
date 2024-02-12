@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        // Stores the current URL path including the leading slash
+        var path = window.location.pathname;
+        // If there's no hash in the URL, redirect to index.html with the path as the hash
+        if (window.location.hash === "") {
+          window.location.replace("/index.html#" + path);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>
+      If you are not redirected automatically, follow the
+      <a href="../src/App.js">link to the homepage</a>.
+    </p>
+  </body>
+</html>
